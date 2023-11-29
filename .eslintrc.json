@@ -18,6 +18,7 @@
   "rules": {
     // Here you can add or override specific rules
     // Example: "@angular-eslint/directive-selector": ["error", { "type": "attribute", "prefix": "app", "style": "camelCase" }]
+    // Just testing if pull requests work
   },
   "overrides": [
     {
