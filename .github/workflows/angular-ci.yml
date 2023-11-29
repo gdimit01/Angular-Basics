@@ -9,7 +9,6 @@ on:
 jobs:
   install:
     runs-on: ubuntu-latest
-
     steps:
       - uses: actions/checkout@v3
       - name: Setup Node.js
@@ -17,7 +16,7 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
       - name: Install Angular CLI
         run: npm install -g @angular/cli
@@ -32,7 +31,7 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
       - name: Lint
         run: npm run lint
@@ -47,7 +46,7 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
       - name: Build
         run: ng build --configuration production
@@ -62,9 +61,9 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
-      - name: Test
+      - name: Run tests
         run: npm run test -- --watch=false --no-progress --browsers=ChromeHeadlessNoSandbox
 
   archive:
@@ -77,7 +76,7 @@ jobs:
         with:
           node-version: "18"
           cache: "npm"
-      - name: Install Dependencies
+      - name: Install dependencies
         run: npm ci
       - name: Archive production artifacts
         uses: actions/upload-artifact@v3
