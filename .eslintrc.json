@@ -24,13 +24,16 @@
       "files": ["*.component.ts"],
       "rules": {
         // Component-specific rules
+        // Example: "@angular-eslint/component-selector": ["error", { "type": "element", "prefix": "app", "style": "kebab-case" }]
       }
     },
     {
       "files": ["*.service.ts"],
       "rules": {
-        // Service-specific rules and more rull=e
+        // Service-specific rules
+        // Example: "@typescript-eslint/no-unused-vars": "error"
       }
     }
+    // You can add more overrides for other types of files as needed
   ]
 }
