@@ -29,7 +29,7 @@
     {
       "files": ["*.service.ts"],
       "rules": {
-        // Service-specific rules
+        // Service-specific rules and more rull=e
       }
     }
   ]
